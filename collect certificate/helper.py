@@ -68,3 +68,5 @@ def save_url(id_list, url_list, path=os.getcwd(), filename='url.csv'):
     pd.DataFrame({"id":id_list, "url":url_list}).to_csv(path+'/'+filename, header = True, index = True, sep = ",")
 
 
+def to_list(s):
+    return s.split(',')
